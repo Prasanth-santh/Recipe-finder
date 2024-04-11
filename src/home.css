@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Home_overall{
+    min-height: 100vh;
+    width: 100%;
+    /* padding: 200px 0 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226,230,239);
+}
+.Home_overall>p{
+    font-size: 2rem;
+}
+.content{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.Ingredient{
+    background-color: white;
+    margin-top: 50px;
+    min-height: 400px;
+    width: 300px;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10PX;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+.Ingredient:hover{
+    transform: scale(1.05);
+}
+.Ingredient h3{
+    padding: 0 0 10px;
+    font-size: 1rem;
+}
+.Ingredient img{
+    height: 150px;
+    width: 150px;
+    /* padding: 10px 0; */
+    padding: 0 0 10px;
+}
+.Ingredient a>button{
+    /* height: 20px; */
+    margin: 10px 0;
+    padding: 5px;
+    background-color:cadetblue;
+    border: unset;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.Ingredient p{
+    padding: 5px 0;
+}
+.Ingerdientlist{
+    height: 100px;
+    padding: 20px;
+    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Ingerdientlist p{
+    font-size: 0.8rem;
+    
+}
+
+.search_bar button{
+    /* padding: 5px; */
+    height: 50px;
+    width: 100px;
+    background-color:cadetblue;
+    color: white;
+    border: unset;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.search_bar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 20px 0 0;
+    /* background-color: cadetblue; */
+}
+.cusine_content{
+   min-height: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.cusine_content input{
+    padding: 10px;
+    height: 50px;
+    width:400px;
+    outline: none;
+    font-size: 1.3rem;
+}
+.cusine_content label{
+    font-size: 1.3rem;
+    padding: 0 0 5px;
+}
+.cusine_content select{
+    height: 40px;
+    outline: unset;
+    font-size: 1.3rem;
+    /* border: unset; */
+}
+@media screen and (min-width:300px) and (max-width:500px) {
+    .cusine_content{
+        min-height: 50px;
+         width: 300px;
+    }
+    .search_bar input{
+        width: 300px;
+    }
+}

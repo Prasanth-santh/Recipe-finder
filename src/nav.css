@@ -1,0 +1,40 @@
+.Nav_overall{
+    min-height: 10vh;
+    background-color: var(--colorblack);
+    color: var(--colorwhite);
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 10px;
+}
+.logo{
+    min-height: 80px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.logo>img{
+    height: 50px;
+    width: 50px;
+}
+.search_bar{
+    min-height: 80px;
+    display: flex;
+        justify-content: center;
+    align-items: center;
+}
+.search_bar>input{
+    padding: 10px;
+    height: 35px;
+    width: 400px;
+    position: relative;
+    outline: none;
+    border: unset;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.icon{
+    position: absolute;
+    color: black;
+    right: 20px;
+}
